@@ -38,4 +38,9 @@ extensions:
 
 ```
 
+If you are anything like me and executing tests from within vagrant VM, 
+then you may want to proxy notifications from virtual to host machine.
+
+To do that you need to install vagrant plugin [vagrant-notify](https://github.com/fgrehm/vagrant-notify) and follow the instructions.
+
 -----
