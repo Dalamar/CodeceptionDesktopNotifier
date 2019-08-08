@@ -1,6 +1,6 @@
 <?php
 
-namespace Dalamar\Codeception\Extension;
+namespace Codeception\Extension;
 
 use Codeception\Event\PrintResultEvent;
 use Codeception\Platform\Extension;
@@ -18,8 +18,8 @@ class DesktopNotifier extends Extension
 
         $notifier = NotifierFactory::create();
 
-        $message = "Codeception Tests results: " .
-            $result->count() . " test where " .
+        $message =
+            $result->count() . " executed, " .
             $result->failureCount() . " failed, " .
             $result->errorCount() . " errors, " .
             $result->skippedCount() . " skipped, " .
@@ -28,7 +28,8 @@ class DesktopNotifier extends Extension
         $notification =
             (new Notification())
                 ->setTitle('Codeception Tests Results')
-                ->setBody($message);
+                ->setBody($message)
+        ;
 
         $notifier->send($notification);
     }
