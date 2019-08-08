@@ -1,0 +1,28 @@
+{
+    "name":"dalamar/codeception-desktop-notifier",
+    "description":"Desktop Notification Extension for Codeception",
+    "keywords":["notification", "acceptance testing", "functional testing", "unit testing", "tdd"],
+    "homepage":"https://github.com/Dalamar",
+
+    "type":"library",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Alexey Pikulik",
+            "email":"a.a.pikulik@gmail.com",
+            "homepage":"https://github.com/Dalamar"
+        }
+    ],  
+    "require": {
+        "jolicode/jolinotif": "^2.0"
+    },
+    "require-dev": {
+        "codeception/codeception": "@dev"
+    },
+    "autoload":{
+        "psr-0":{
+            "Codeception":"src"
+     
+        }
+    }    
+}
